@@ -1,0 +1,6 @@
+/* خط عربي احترافي — El Messiri */
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-ar: "El Messiri", "Segoe UI", Tahoma, system-ui, sans-serif;
+}

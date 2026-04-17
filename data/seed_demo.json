@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "description": "بيانات تجريبية مرجعية — نفس المحتوى في sql/seed_demo.sql",
+    "departments_count": 10,
+    "doctors_count": 40,
+    "doctors_per_department": 4,
+    "manual_unavailable_count": 12,
+    "manual_unavailable_percent": 30,
+    "auto_available_approx_percent": 70,
+    "notes": "الحالة اليدوية غير المتاحة تُستخدم لمحاكاة إجازة/عيادة مغلقة. الحالة التلقائية تتبع وقت الدوام الحالي.",
+    "images": "image_path = null في قاعدة البيانات؛ ارفع الصور من لوحة التحكم أو استخدم placeholder عبر واجهة التعديل."
+  },
+  "departments": [
+    { "name": "الطوارئ", "icon": "activity", "sort_order": 10 },
+    { "name": "الباطنية", "icon": "stethoscope", "sort_order": 20 },
+    { "name": "الأطفال", "icon": "baby", "sort_order": 30 },
+    { "name": "طب وجراحة الفم والأسنان", "icon": "tooth", "sort_order": 40 },
+    { "name": "النساء والتوليد", "icon": "heart", "sort_order": 50 },
+    { "name": "العيون", "icon": "eye", "sort_order": 60 },
+    { "name": "الجراحة العامة", "icon": "layers", "sort_order": 70 },
+    { "name": "العظام والمفاصل", "icon": "bone", "sort_order": 80 },
+    { "name": "الأنف والأذن والحنجرة", "icon": "hospital", "sort_order": 90 },
+    { "name": "القلب والأوعية الدموية", "icon": "heart", "sort_order": 100 }
+  ],
+  "screen": {
+    "name": "شاشة الاستقبال الرئيسية",
+    "token": "a1b2c3d4e5f6789012345678901234ab",
+    "slide_seconds": 8,
+    "refresh_seconds": 20
+  },
+  "doctors_sample": [
+    {
+      "department": "الطوارئ",
+      "name": "د. طارق سعيد باحسين",
+      "specialty": "استشاري طوارئ وإنعاش قلبي رئوي",
+      "work_start": "08:00",
+      "work_end": "15:00",
+      "status_mode": "auto",
+      "effective_note": "متاح أثناء الدوام"
+    },
+    {
+      "department": "الطوارئ",
+      "name": "د. منى عبدالعزيز الزهراني",
+      "specialty": "أخصائية طوارئ",
+      "work_start": "09:00",
+      "work_end": "17:00",
+      "status_mode": "manual",
+      "manual_status": "unavailable",
+      "effective_note": "غير متاح (يدوي — مثال إجازة)"
+    }
+  ]
+}

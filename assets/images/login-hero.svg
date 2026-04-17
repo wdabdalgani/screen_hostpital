@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="45%" stop-color="#134e4a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2FAE66" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2C7FB8" stop-opacity="0.25"/>
+    </linearGradient>
+    <radialGradient id="r1" cx="30%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#g1)"/>
+  <rect width="1600" height="1200" fill="url(#g2)"/>
+  <rect width="1600" height="1200" fill="url(#r1)"/>
+  <g opacity="0.22" stroke="#ffffff" stroke-width="1.2" fill="none" filter="url(#blur)">
+    <path d="M0 380 Q400 320 800 380 T1600 380"/>
+    <path d="M0 520 Q500 460 1000 520 T1600 520"/>
+    <path d="M0 660 Q350 600 750 660 T1600 660"/>
+  </g>
+  <g opacity="0.35" stroke="#2FAE66" stroke-width="1.5" fill="none">
+    <circle cx="1180" cy="420" r="180"/>
+    <circle cx="1180" cy="420" r="120"/>
+    <circle cx="1180" cy="420" r="60"/>
+  </g>
+  <g opacity="0.2" fill="#ffffff">
+    <circle cx="220" cy="900" r="4"/>
+    <circle cx="280" cy="820" r="3"/>
+    <circle cx="340" cy="960" r="3.5"/>
+    <circle cx="400" cy="760" r="2.5"/>
+  </g>
+</svg>

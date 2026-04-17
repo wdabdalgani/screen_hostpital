@@ -1,0 +1,664 @@
+body {
+    
+    background: linear-gradient(180deg,
+        #f7fbff 0%,
+        #d4e9f7 28%,
+        #3498db 58%,
+        #2980b9 100%);
+    background-attachment: fixed;
+}
+
+.box {
+    background-color: rgba(255, 255, 0, 0);
+    display: flex;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+}
+
+.box0 {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.box1 {
+    background: rgba(255, 255, 255, 0);
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.doctor {
+
+    background-attachment: fixed;
+}
+
+.name_doctor {
+    width: 100%;
+    height: 62px;
+    background:
+
+        linear-gradient(to left,
+            #026e02,
+            #08bc08);
+    border-radius: 25px 0px 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.name_des {
+    margin-top: 10px;
+    width: 100%;
+    height: 56px;
+    color: white;
+    background: linear-gradient(to left,
+            #026e02,
+            #08bc08);
+
+    border-radius: 25px 0px 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.img_part_doctor {
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 160px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.img_part_doctor img {
+    width: 150px;
+}
+
+.box2 {
+    background: #dfebf2;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin: 0 12px;
+    margin: auto;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.342);
+    direction: ltr;
+    unicode-bidi: isolate;
+    font-family:
+        "Segoe UI",
+        "Frutiger Linotype",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    font-synthesis: none;
+}
+
+.top_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 2.85rem;
+    width: 92%;
+    margin: 0.5rem auto 0.15rem;
+    padding: 0.2rem 2.75rem 0.35rem;
+    box-sizing: border-box;
+}
+
+.top_header .icon {
+    position: absolute;
+    left: 0.35rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_header img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.line {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.text_title {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.text_title span {
+    display: block;
+    font-size: clamp(0.78rem, 2.6vw, 0.95rem);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    color: #0a5a8a;
+    text-shadow: none;
+}
+
+.line img {
+    width: 93%;
+
+    margin: 0.1rem auto 0.15rem;
+    display: block;
+    opacity: 0.92;
+}
+
+.table {
+    width: 94%;
+    margin: 0.1rem auto 0.45rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+}
+
+
+.main {
+    position: relative;
+}
+
+.button_data {
+    width: 90%;
+    margin: auto;
+    border-radius: 14px;
+    height: 40px;
+    background:
+        linear-gradient(to right, #03568a, #1c8fd7);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, 7.25rem) 10px minmax(2.85rem, 3.35rem) 14px minmax(2.85rem, 3.35rem);
+    align-items: center;
+    justify-items: center;
+    direction: ltr;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0.42rem 0.2rem;
+    color: #0d4766;
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(13, 71, 102, 0.12);
+    background-color: transparent;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row h4 {
+    margin: 0;
+    justify-self: start;
+    text-align: left;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    color: #0a5a8a;
+}
+
+.row .LINE {
+    width: 0;
+    height: 1rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-right: 1.5px solid rgba(10, 90, 138, 0.38);
+    background: transparent;
+    justify-self: center;
+    align-self: center;
+}
+
+.row .date,
+.row .date-of {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    font-weight: 600;
+    color: #156fa3;
+    text-align: center;
+    min-width: 0;
+}
+
+.row .line {
+    font-weight: 500;
+    color: rgba(13, 71, 102, 0.45);
+    text-align: center;
+    user-select: none;
+}
+
+.footer {
+    flex-shrink: 0;
+    margin-top: clamp(0.35rem, 1.5vw, 0.85rem);
+    padding: clamp(0.35rem, 1.5vw, 0.65rem) 0.75rem 0.45rem;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__slogan {
+    display: inline-block;
+    font-family:
+        "Segoe UI",
+        "Frutiger Linotype",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    font-size: clamp(0.58rem, 1.85vw, 0.82rem);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #f2f8ff;
+
+
+
+    -webkit-font-smoothing: antialiased;
+}
+
+.button_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+}
+
+/* —— Motion intro (≈5.5s+ staggered sequence) —— */
+:root {
+    --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@keyframes motion-logo-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        filter: blur(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes motion-doctor-in {
+    from {
+        opacity: 0;
+        transform: translateY(36px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes motion-from-start {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes motion-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes motion-schedule-in {
+    from {
+        opacity: 0;
+        transform: translateX(-24px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes motion-line-in {
+    from {
+        opacity: 0;
+        transform: scaleX(0.25);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes motion-row-in {
+    from {
+        opacity: 0;
+        transform: translateX(-16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes motion-phone-in {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes motion-footer-in {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.motion-logo {
+    animation: motion-logo-in 0.95s var(--motion-ease) 0s both;
+}
+
+.motion-doctor {
+    animation: motion-doctor-in 1.05s var(--motion-ease) 0.38s both;
+}
+
+.motion-name-doctor {
+    animation: motion-from-start 0.72s var(--motion-ease) 1.15s both;
+}
+
+.motion-name-des {
+    animation: motion-from-start 0.68s var(--motion-ease) 1.58s both;
+}
+
+.motion-part {
+    animation: motion-fade-up 0.75s var(--motion-ease) 2.02s both;
+}
+
+.motion-schedule {
+    animation: motion-schedule-in 0.9s var(--motion-ease) 2.48s both;
+}
+
+.motion-line-divider {
+    transform-origin: center;
+    animation: motion-line-in 0.55s var(--motion-ease) 3.12s both;
+}
+
+.motion-row:nth-child(1) {
+    animation: motion-row-in 0.52s var(--motion-ease) 3.22s both;
+}
+
+.motion-row:nth-child(2) {
+    animation: motion-row-in 0.52s var(--motion-ease) 3.36s both;
+}
+
+.motion-row:nth-child(3) {
+    animation: motion-row-in 0.52s var(--motion-ease) 3.5s both;
+}
+
+.motion-row:nth-child(4) {
+    animation: motion-row-in 0.52s var(--motion-ease) 3.64s both;
+}
+
+.motion-row:nth-child(5) {
+    animation: motion-row-in 0.52s var(--motion-ease) 3.78s both;
+}
+
+.motion-row:nth-child(6) {
+    animation: motion-row-in 0.52s var(--motion-ease) 3.92s both;
+}
+
+.motion-phone {
+    animation: motion-phone-in 0.72s var(--motion-ease) 4.38s both;
+}
+
+.motion-footer {
+    animation: motion-footer-in 0.78s var(--motion-ease) 4.92s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .motion-intro [class*="motion-"] {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}
+
+/* my screen  */
+ 
+
+@media (orientation: portrait) and (min-width: 1000px) and (max-width: 1100px) and (min-height: 1800px) {
+
+    /* background: black; */
+    /* display: none; */
+
+    .header .logo {
+        max-width: none !important;
+        /* أو 100% */
+        max-height: none !important;
+        /* أو 330px */
+        width: 100%;
+        height: 165px;
+        object-fit: contain;
+        /* أو cover حسب الشكل المطلوب */
+    }
+
+    .doctor_shadwo {
+        /* display: none; */
+        max-width: none !important;
+        /* أو 100% */
+        max-height: none !important;
+        text-align: center;
+        /* أو 330px */
+        width: 100%;
+        height: 865px;
+        object-fit: contain;
+        /* background-color: #026e02; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doctor_shadwo .doctor {
+        max-width: none !important;
+        /* أو 100% */
+        max-height: none !important;
+        width: 100%;
+        height: 100%;
+        /* background-color: #026e02; */
+
+    }
+
+    .box {
+        align-items: flex-start;
+        height: 42vh;
+    }
+
+    .box1 {
+        max-width: none !important;
+        /* أو 100% */
+        max-height: none !important;
+        /* background-color: #026e02; */
+        height: 100%;
+    }
+
+    .name_doctor {
+        width: 95%;
+        font-size: 4rem;
+        background-color: #03568a;
+        height: 184px;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 10px 5px;
+        border-radius: 15% 0px 0 15%;
+
+    }
+
+    .name_des {
+        width: 95%;
+        font-size: 3rem;
+        background-color: #03568a;
+        height: 110px;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 10px 5px;
+        /* border-radius: 15% 0px 0 15%; */
+    }
+
+    .img_part_doctor {
+        margin: 30px 0;
+
+        height: 50%;
+        /* background-color: #026e02; */
+    }
+
+    .img_part_doctor img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box2 {
+        padding: 25px 0;
+        height: auto;
+    }
+
+    .table {
+        width: 83%;
+        font-size: 1rem;
+    }
+
+    .top_header {
+        width: 83%;
+        min-height: 4.85rem;
+        margin: auto;
+    }
+ 
+
+    .top_header img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .text_title span {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        line-height: .9;
+        color: #0a5a8a;
+        text-shadow: none;
+        text-align: center;
+        margin-left: 59px;
+
+
+    }
+
+    .row {
+        grid-template-columns: minmax(9.5rem, 11.25rem) 10px minmax(4.85rem, 5.35rem) 14px minmax(4.85rem, 6.35rem);
+    }
+
+    .row h4 {
+        font-size: 1.5rem;
+    }
+
+    .row .LINE {
+        border-right: 5.5px solid rgba(10, 90, 138, 0.38);
+    }
+
+    .row .date,
+    .row .date-of {
+        font-variant-numeric: tabular-nums;
+        font-feature-settings: "tnum" 1;
+        font-weight: 600;
+        color: #156fa3;
+        text-align: center;
+        min-width: 0;
+        font-size: 1.5rem;
+
+    }
+
+    .button_data {
+        font-size: 2rem;
+        height: auto;
+        padding: 22px 10px;
+    }
+
+    .footer__slogan {
+        font-size: 2rem;
+    }
+}

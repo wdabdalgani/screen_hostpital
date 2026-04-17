@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>مستشفى الحريري العالمي</title>
+    <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: linear-gradient(180deg,
+          #f7fbff 0%,
+          #d4e9f7 28%,
+          #3498db 58%,
+          #2980b9 100%);
+      background-attachment: fixed;
+    }
+
+    .page {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      padding-inline: 0;
+      padding-block: clamp(0.45rem, 2.2vw, 1.1rem) clamp(0.5rem, 2vw, 1.25rem);
+    }
+
+    .header {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: clamp(0.2rem, 1.4vw, 0.55rem);
+    }
+
+    .logo {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: min(58vw, 368px);
+      max-height: 168px;
+      object-fit: contain;
+      margin-inline: auto;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 100%;
+      align-self: stretch;
+      min-width: 0;
+      padding-bottom: clamp(0.5rem, 2.5vh, 1.25rem);
+      box-sizing: border-box;
+    }
+
+    .doctor {
+      display: block;
+      width: 450px;
+      max-width: min(68vw, 240px);
+      height: 380px;
+      /* background-color: black; */
+      /* background-attachment: fixed; */
+    }
+
+    .doctor img {
+      z-index: 100px;
+      /* background-color: black; */
+    }
+
+    .doctor_shadwo {
+      position: relative;
+      /* background-color: #3498db; */
+
+    }
+
+    .shadow {
+      position: absolute;
+      top: 0;
+
+      width: 100%;
+      height: 100%;
+      /* background-color: #2980b9; */
+      background: linear-gradient(180deg,
+          #f7fbff00 0%,
+          #d4e9f709 28%,
+          #3498db11 77%,
+          #3498db 100%);
+    }
+
+    @media (min-width: 480px) {
+      .logo {
+        max-width: min(48vw, 200px);
+        max-height: 52px;
+      }
+
+      .doctor {
+        max-width: min(58vw, 360px);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .page {
+        padding-inline: 0;
+        padding-block: clamp(0.55rem, 2.2vw, 1.1rem) clamp(0.65rem, 2.5vw, 1.5rem);
+      }
+
+      .logo {
+        max-width: min(38vw, 240px);
+        max-height: 56px;
+      }
+
+      .doctor {
+        max-width: min(85vw, 440px);
+      }
+
+     
+    }
+
+    @media (orientation: portrait)
+     and (min-width: 1000px) and 
+     (max-width: 1100px) and (min-height: 1800px)
+     {
+        body {
+        
+        }
+      }
+
+  </style>
+  </head>
+
+  <body class="motion-intro">
+    <div class="page motion-page">
+      <header class="header">
+        <img class="logo motion-logo" src="logo.png"
+          alt="CLINIQUE HARIRI INTERNATIONALE — مستشفى الحريري العالمي">
+      </header>
+      <main class="main">
+        <div class="doctor_shadwo motion-doctor">
+          <img class="doctor" src="doctor.png"
+            alt="فريق طبي — مستشفى الحريري العالمي">
+          <div class="shadow"></div>
+        </div>
+
+        <div class="box">
+          <div class="box1">
+            <div class="name_doctor motion-name-doctor">
+              <p>
+                DR. MOHMMMED
+              </p>
+            </div>
+            <div class="name_des motion-name-des">
+              <span> appadind dna </span>
+            </div>
+            <div class="img_part_doctor motion-part">
+              <img src="part.png" alt>
+            </div>
+          </div>
+          <div class="box0">
+            <div class="box2 motion-schedule">
+
+              <div class="top_header">
+
+                <div class="text_title">
+                  <span>
+                    Horaires de consultation
+
+                  </span>
+                </div>
+                <div class="icon">
+                  <img src="icon_time.png" alt>
+                </div>
+              </div>
+              <div class="line motion-line-divider">
+
+                <img src="line_one.png" alt>
+              </div>
+              <div class="table">
+                <div class="row motion-row">
+                  <h4>LUNDI</h4>
+                  <div class="LINE"></div>
+                  <div class="date">
+                    08:00
+                  </div>
+                  <div class="line" aria-hidden="true">–</div>
+                  <div class="date-of">
+                    16:00
+                  </div>
+                </div>
+                <div class="row motion-row">
+                  <h4>LUNDI</h4>
+                  <div class="LINE"></div>
+                  <div class="date">
+                    08:00
+                  </div>
+                  <div class="line" aria-hidden="true">–</div>
+                  <div class="date-of">
+                    16:00
+                  </div>
+                </div>
+                <div class="row motion-row">
+                  <h4>LUNDI</h4>
+                  <div class="LINE"></div>
+                  <div class="date">
+                    08:00
+                  </div>
+                  <div class="line" aria-hidden="true">–</div>
+                  <div class="date-of">
+                    16:00
+                  </div>
+                </div>
+                <div class="row motion-row">
+                  <h4>LUNDI</h4>
+                  <div class="LINE"></div>
+                  <div class="date">
+                    08:00
+                  </div>
+                  <div class="line" aria-hidden="true">–</div>
+                  <div class="date-of">
+                    16:00
+                  </div>
+                </div>
+                <div class="row motion-row">
+                  <h4>LUNDI</h4>
+                  <div class="LINE"></div>
+                  <div class="date">
+                    08:00
+                  </div>
+                  <div class="line" aria-hidden="true">–</div>
+                  <div class="date-of">
+                    16:00
+                  </div>
+                </div>
+                <div class="row motion-row">
+                  <h4>LUNDI</h4>
+                  <div class="LINE"></div>
+                  <div class="date">
+                    08:00
+                  </div>
+                  <div class="line" aria-hidden="true">–</div>
+                  <div class="date-of">
+                    16:00
+                  </div>
+                </div>
+
+              </div>
+              <div class="button_data motion-phone">
+                68998877 - 98557744
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <div class="footer motion-footer">
+        <span class="footer__slogan" lang="fr">VOTRE SANTÉ NOTRE PRIORITÉ</span>
+      </div>
+
+    </div>
+  </body>
+
+</html>

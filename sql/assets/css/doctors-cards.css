@@ -1,0 +1,318 @@
+/* Doctors Manager — card grid (RTL) */
+.doctors-manager__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.doctors-manager__toolbar .form__group {
+  margin: 0;
+  flex: 1 1 160px;
+  min-width: 140px;
+}
+
+.doctors-manager__toolbar .form__label {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.doctors-manager__count {
+  width: 100%;
+  font-size: 0.88rem;
+  color: var(--saas-text-muted);
+  margin: 0 0 0.25rem;
+}
+
+.doctor-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .doctor-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .doctor-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .doctor-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.doctor-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--saas-radius-lg);
+  overflow: hidden;
+  background: var(--saas-surface-solid);
+  box-shadow: var(--saas-shadow-soft);
+  border: 1px solid var(--saas-border);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 40px rgba(44, 127, 184, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.doctor-card[hidden] {
+  display: none !important;
+}
+
+.doctor-card.is-leaving {
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Visual block: dept bg + hero photo */
+.doctor-card__visual {
+  position: relative;
+  height: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.doctor-card__ambient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(47, 174, 102, 0.35), rgba(44, 127, 184, 0.4));
+}
+
+.doctor-card__ambient-img {
+  position: absolute;
+  inset: -10%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  filter: blur(22px) saturate(1.05);
+  opacity: 0.5;
+}
+
+.doctor-card__ambient-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(10, 22, 40, 0.45) 100%
+  ),
+    linear-gradient(125deg, rgba(47, 174, 102, 0.35) 0%, transparent 55%, rgba(44, 127, 184, 0.3) 100%);
+  mix-blend-mode: multiply;
+}
+
+.doctor-card__photo-wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 0.75rem 0;
+  z-index: 2;
+}
+
+.doctor-card__photo {
+  width: 100%;
+  max-width: 220px;
+  height: 175px;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.doctor-card__photo--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.doctor-card__photo--empty svg {
+  width: 56px;
+  height: 56px;
+  opacity: 0.9;
+}
+
+/* Actions — visible on hover */
+.doctor-card__actions {
+  position: absolute;
+  top: 0.55rem;
+  inset-inline-end: 0.55rem;
+  z-index: 4;
+  display: flex;
+  gap: 0.35rem;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.doctor-card:hover .doctor-card__actions,
+.doctor-card:focus-within .doctor-card__actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (hover: none) {
+  .doctor-card__actions {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.doctor-card__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(10, 22, 40, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.doctor-card__action:hover {
+  background: rgba(10, 22, 40, 0.72);
+  transform: scale(1.05);
+}
+
+.doctor-card__action--toggle:hover {
+  color: #b8f5d0;
+}
+
+.doctor-card__action--edit:hover {
+  color: #a8d4f5;
+}
+
+.doctor-card__action--delete:hover {
+  background: rgba(185, 28, 28, 0.85);
+  color: #fff;
+}
+
+.doctor-card__action:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.doctor-card__action .saas-ic {
+  stroke: currentColor;
+}
+
+/* Status badge */
+.doctor-card__badge {
+  position: absolute;
+  bottom: 0.55rem;
+  inset-inline-start: 0.55rem;
+  z-index: 3;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.doctor-card__badge--ok {
+  background: rgba(47, 174, 102, 0.88);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.doctor-card__badge--no {
+  background: rgba(220, 38, 38, 0.9);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.doctor-card__mode {
+  position: absolute;
+  top: 0.55rem;
+  inset-inline-start: 0.55rem;
+  z-index: 3;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Body text */
+.doctor-card__body {
+  padding: 1rem 1.1rem 1.15rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.doctor-card__name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--saas-text);
+}
+
+.doctor-card__spec {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--saas-text-muted);
+  font-weight: 600;
+}
+
+.doctor-card__time {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--saas-accent-2);
+  direction: ltr;
+  text-align: inherit;
+}
+
+.doctor-card__meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  color: var(--saas-text-muted);
+  line-height: 1.4;
+}
+
+.doctors-manager__empty {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--saas-text-muted);
+}
+
+.doctors-manager__empty .btn {
+  margin-top: 1rem;
+}
